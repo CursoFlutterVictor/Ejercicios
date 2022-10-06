@@ -9,7 +9,5 @@ void main() {
 
   if (isAdmin && encendido) {
     print("ADMIN + ENCENDIDO");
-  } else {
-    print('ADMIN + APAGADO');
   }
 }
