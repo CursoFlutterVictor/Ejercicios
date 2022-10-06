@@ -1,17 +1,15 @@
 void main() {
-  bool encendido = false;
-  bool apagado = !false;
+  bool encendido = true;
+  bool apagado = !encendido;
+
   print(encendido);
   print(apagado);
 
   bool isAdmin = true;
 
-  // Igual que (isAdmin == true)
-  if (isAdmin) {
-    print("ADMINISTRADOR");
-  }
-
-  if (isAdmin & apagado) {
-    print("ADMIN y APAGADO");
+  if (isAdmin && encendido) {
+    print("ADMIN + ENCENDIDO");
+  } else {
+    print('ADMIN + APAGADO');
   }
 }
