@@ -8,7 +8,7 @@
             "name": "Dart & Flutter",
             "request": "launch",
             "type": "dart",
-            "program": "01_Variables/03_bool.dart"
+            "program": "01_Variables/04_listas.dart"
         }
     ]
 }
