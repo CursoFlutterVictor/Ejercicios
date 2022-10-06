@@ -16,7 +16,7 @@ void main() {
   print("LONGITUD: ${listaDouble.length}");
   print("POSICION 2 (LISTA[1]): ${listaDouble[1]}");
 
-  // Adicion de elementos a la lista
+  // Adicion de elementos
   List<String> listaPalabras = ["esta", "es", "una", "lista", "de", "strings"];
 
   print("STRINGS: $listaPalabras");
