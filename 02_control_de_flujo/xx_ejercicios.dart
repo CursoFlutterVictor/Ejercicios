@@ -18,6 +18,7 @@
 
   3.  Crear una tabla de multiplicar con base 7
   4.  Preguntar al usuario que base quiere e imprimir la tabla de multiplicar
+  5.  Realizar el ejercicio de los dias de la semana con if-else
 
 */
 
@@ -38,6 +39,24 @@ void ejercicio1() {
   }
 }
 
+void ejercicio3() {
+  for (int i = 0; i <= 10; i++) {
+    print("7 x $i = ${7 * i}");
+  }
+}
+
+void ejercicio4() {
+  stdout.writeln("¿Que base quieres para la tabla?");
+
+  //int? base = int.tryParse(stdin.readLineSync() ?? '0') ?? 0;
+  int? base = int.parse(stdin.readLineSync().toString());
+
+  for (int i = 0; i <= 10; i++) {
+    print("$base x $i = ${base * i}");
+  }
+}
+
 void main() {
-  ejercicio1();
+  //ejercicio1();
+  ejercicio4();
 }
