@@ -8,8 +8,8 @@
             "name": "Dart & Flutter",
             "request": "launch",
             "type": "dart",
-            "program": "01_Variables/xx_ejercicios.dart",
-            //"program": "02_control_de_flujo/xx_ejercicios.dart",
+            //"program": "01_Variables/xx_ejercicios.dart",
+            "program": "02_control_de_flujo/07_switch_case.dart",
             //"console": "terminal"
         }
     ]
