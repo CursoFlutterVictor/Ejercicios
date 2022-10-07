@@ -11,6 +11,7 @@
       y si le gusta o no el baloncesto e imprimir en pantalla el color de la camiseta
       que mas le gusta de Zara
 */
+import 'dart:convert';
 
 void ejercicio1() {
   print("\nEJERCICIO 1\n");
@@ -57,13 +58,48 @@ void ejercicio4() {
       y si le gusta o no el baloncesto e imprimir en pantalla el color de la camiseta
       que mas le gusta de Zara
   */
-  /*
-  Map<String, dynamic> Victor = {
-    "nombre": "Victor",
-    "apelido": "jose",
-    "direccion": "ronda de dalt 21"
+
+  Map<String, dynamic> aficiones = {
+    "deportes": ["piraguismo", "crossfit", "natacion"],
+    "series": ["big bang", "juego de tronos"],
+    "pintar": false,
+    "peliculas": 1
   };
-  */
+
+  Map<String, dynamic> camiseta = {
+    "marca": "adidas",
+    "color": "rojo",
+    "precio": 19.99
+  };
+
+  Map<String, dynamic> zara = {
+    "nombre": "zara",
+    "camisetas": [camiseta] // LISTA
+  };
+
+  Map<String, dynamic> victor = {
+    "nombre": "Victor",
+    "apelido": "Bernabe",
+    "aficiones": aficiones,
+    "direccion": "ronda de dalt 21",
+    "baloncesto": false,
+    'tiendas': [zara] // LISTA
+  };
+
+  // Escribirlo bonito
+  print("JSON (FORMATEADO):");
+  JsonEncoder encoder = new JsonEncoder.withIndent('....');
+  String prettyprint = encoder.convert(victor);
+  print(prettyprint);
+
+  // Color camiseta preferida
+  // SE PUEDE CREAR UNA LISTA APARTIR DEL
+  print(
+      "\nCOLOR CAMISETA: ${victor['tiendas'][0]['camisetas'][0]['color'].toString()}\n");
+
+  List<Map<String, dynamic>> listaTiendas = victor['tiendas'];
+
+  print('TIENDAS: $listaTiendas\n');
 }
 
 void main() {
