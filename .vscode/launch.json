@@ -9,8 +9,9 @@
             "request": "launch",
             "type": "dart",
             //"program": "01_Variables/xx_ejercicios.dart",
-            "program": "02_control_de_flujo/xx_ejercicios.dart",
-            //"program": "03_funciones/02_funciones_flecha.dart",
+            //"program": "02_control_de_flujo/xx_ejercicios.dart",
+            //"program": "03_funciones/03_call_backs.dart",
+            "program": "04_otros_tipos/04_catch_error.dart",
             //"console": "terminal"
         }
     ]
