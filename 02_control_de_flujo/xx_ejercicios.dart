@@ -48,8 +48,8 @@ void ejercicio3() {
 void ejercicio4() {
   stdout.writeln("¿Que base quieres para la tabla?");
 
-  //int? base = int.tryParse(stdin.readLineSync() ?? '0') ?? 0;
-  int? base = int.parse(stdin.readLineSync().toString());
+  int? base = int.tryParse(stdin.readLineSync() ?? '0') ?? 0;
+  //int? base = int.parse(stdin.readLineSync().toString());
 
   for (int i = 0; i <= 10; i++) {
     print("$base x $i = ${base * i}");
